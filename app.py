@@ -23,7 +23,7 @@ st.markdown(
 
 print(os.getenv('analytics_tag'))
 
-import home as home, Cleaning_data as Cleaning_data, Visualization as Visualization
+import home as home, Cleaning_data as Cleaning_data
 
 
 
@@ -46,8 +46,8 @@ class MultiApp:
         with st.sidebar:        
             app = option_menu(
                 menu_title='Analytics',
-                options=['Home','Cleaning_data','Visualization'],
-                icons=['house-fill','bucket','bar-chart-fill'],
+                options=['Home','Cleaning_data'],
+                icons=['house-fill','bucket'],
                 menu_icon=" :robot_face: ",
                 default_index=1,
                 styles={
@@ -62,9 +62,7 @@ class MultiApp:
         if app == "Home":
             home.app()
         if app == "Cleaning_data":
-            Cleaning_data.app()    
-        if app == 'Visualization':
-            Visualization.app()  
+            Cleaning_data.app()     
 
 
     run()            

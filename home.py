@@ -3,11 +3,11 @@ from streamlit_style import hide_streamlit_style
 
 def app():
     hide_streamlit_style()
-    st.title("Welcome to the Data Cleaning & Visualization App")
+    st.title("Welcome to the Data Cleaning")
     st.markdown("""
         This app allows you to:
         - **Clean your data**: Inspect, transform, and handle issues in your dataset.
-        - **Visualize your data**: Create interactive visualizations to explore your cleaned data.
+        - **Download your data**: Create interactive visualizations to explore your cleaned data.
         
         Use the sidebar to navigate between pages.
     """)
